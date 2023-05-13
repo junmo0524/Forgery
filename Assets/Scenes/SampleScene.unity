@@ -213,6 +213,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   check: 0
+  Num: 6
   patton: {fileID: 59384210}
 --- !u!1 &422699974
 GameObject:
@@ -226,6 +227,7 @@ GameObject:
   - component: {fileID: 422699977}
   - component: {fileID: 422699976}
   - component: {fileID: 422699975}
+  - component: {fileID: 422699979}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -324,6 +326,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &422699979
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 422699974}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc5ec9f5219f977468d6f478cb22447c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -532,6 +546,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   check: 0
+  Num: 1
   patton: {fileID: 567203066}
 --- !u!1 &611792260
 GameObject:
@@ -623,6 +638,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   check: 0
+  Num: 7
   patton: {fileID: 611792260}
 --- !u!1 &991845883
 GameObject:
@@ -714,6 +730,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   check: 0
+  Num: 2
   patton: {fileID: 991845883}
 --- !u!1 &1080058635
 GameObject:
@@ -873,6 +890,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   check: 0
+  Num: 8
   patton: {fileID: 1358475715}
 --- !u!1 &1500244229
 GameObject:
@@ -1040,6 +1058,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   check: 0
+  Num: 5
   patton: {fileID: 1634690230}
 --- !u!1 &1766483953
 GameObject:
@@ -1067,9 +1086,9 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1766483953}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
+  m_LocalScale: {x: 0.49999997, y: 0.49999997, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 422699978}
@@ -1077,7 +1096,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 100, y: 0}
+  m_AnchoredPosition: {x: 100.00001, y: 0.000015258789}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1766483955
@@ -1131,6 +1150,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   check: 0
+  Num: 3
   patton: {fileID: 1766483953}
 --- !u!1 &1955375089
 GameObject:
@@ -1222,6 +1242,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   check: 0
+  Num: 4
   patton: {fileID: 1955375089}
 --- !u!1 &2111040135
 GameObject:
@@ -1313,4 +1334,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   check: 0
+  Num: 9
   patton: {fileID: 2111040135}

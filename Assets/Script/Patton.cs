@@ -8,6 +8,8 @@ using UnityEngine.UI;
 public class Patton : MonoBehaviour, IPointerUpHandler, IPointerDownHandler, IPointerEnterHandler, IPointerExitHandler, IPointerMoveHandler
 {
     public bool check;
+    public int Num;
+    public static int Score;
     public static bool movecheck;
     public static bool upcheck;
     public GameObject patton;
@@ -28,7 +30,10 @@ public class Patton : MonoBehaviour, IPointerUpHandler, IPointerDownHandler, IPo
     {
         if (movecheck)
         {
-            check = true;
+            if (check == false)
+            {
+                check = true;
+            }
         }
     }
 
@@ -43,7 +48,7 @@ public class Patton : MonoBehaviour, IPointerUpHandler, IPointerDownHandler, IPo
 
     public void OnPointerExit(PointerEventData eventData)
     {
-        if (movecheck!)
+        if (movecheck)
         {
             check = false;
         }
@@ -61,6 +66,7 @@ public class Patton : MonoBehaviour, IPointerUpHandler, IPointerDownHandler, IPo
         if (check)
         {
             image.color = Color.green;
+            Score = Num;
         }
         if (upcheck)
         {
