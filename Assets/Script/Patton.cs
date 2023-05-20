@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Net;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -37,15 +38,6 @@ public class Patton : MonoBehaviour, IPointerUpHandler, IPointerDownHandler, IPo
         }
     }
 
-    public void OnPointerMove(PointerEventData eventData)
-    {
-        if (movecheck == false)
-        {
-            check = false;
-        }
-    }
-
-
     public void OnPointerExit(PointerEventData eventData)
     {
         if (movecheck)
@@ -54,14 +46,22 @@ public class Patton : MonoBehaviour, IPointerUpHandler, IPointerDownHandler, IPo
         }
     }
 
+    public void OnPointerMove(PointerEventData eventData)
+    {
+        if (movecheck == false)
+        {
+            check = false;
+        }
+    }
     public void OnPointerUp(PointerEventData eventData)
     {
         check = false;
         movecheck = false;
         upcheck = true;
+        Score = 0;
     }
 
-    private void Update()
+    public void Update()
     {
         if (check)
         {
@@ -71,6 +71,11 @@ public class Patton : MonoBehaviour, IPointerUpHandler, IPointerDownHandler, IPo
         if (upcheck)
         {
             image.color = Color.black;
+        }
+        if (Input.GetMouseButtonUp(0))
+        {
+            check = false;
+            Score = 0;
         }
     }
 }
