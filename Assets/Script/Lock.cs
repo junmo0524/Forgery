@@ -12,6 +12,7 @@ public class Lock : MonoBehaviour
 {
     List<int> datas = new List<int>();
     List<int> keys = new List<int>() { 0, 1, 2, 3 };
+    public int Num;
 
     void Update()
     {
@@ -23,6 +24,7 @@ public class Lock : MonoBehaviour
             {
                 datas.Add(currentScore);
                 Debug.Log("Score added: " + currentScore);
+                Num++;
             }
         }
         if (Input.GetMouseButtonUp(0))

@@ -9,7 +9,8 @@ using UnityEngine.UI;
 public class Patton : MonoBehaviour, IPointerUpHandler, IPointerDownHandler, IPointerEnterHandler, IPointerExitHandler, IPointerMoveHandler
 {
     public bool check;
-    public int Num;
+    public int Num = 1;
+    public int TagNum;
     public static int Score;
     public static bool movecheck;
     public static bool upcheck;
@@ -34,6 +35,8 @@ public class Patton : MonoBehaviour, IPointerUpHandler, IPointerDownHandler, IPo
             if (check == false)
             {
                 check = true;
+                gameObject.tag = TagNum.ToString();
+                TagNum++;
             }
         }
     }
